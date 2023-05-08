@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: shiva
-        image: yanup30/node80:v1
+        image: yanup30/nodeimage:v1
         ports:
         - containerPort: 8080
 
