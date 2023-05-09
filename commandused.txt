@@ -1,1 +1,2 @@
 This is command file
+ sudo apt-get install azure-cli
