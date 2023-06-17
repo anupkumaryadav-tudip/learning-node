@@ -1,4 +1,4 @@
-# Activity has started
+# Activity has started.
 FROM node:18.16-alpine3.18
 
 WORKDIR /usr/src/firstapp
