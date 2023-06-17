@@ -1,6 +1,6 @@
-FROM node:12-alpine3.14
+FROM node:18.16-alpine3.18
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/firstapp
 
 COPY package*.json ./
 
@@ -8,8 +8,8 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 8080
+RUN npm run build
 
-CMD [ "node", "index.js" ]
+EXPOSE 3000
 
-
+CMD [ "npm", "start" ]
